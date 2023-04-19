@@ -36,7 +36,7 @@ uint256 public b;
 bool public c;
 ```
 It would occupy 3 slots, if we change the order of `b` & `c` like this: 
-```ts
+``` ts
 // slot 0
 bool public a;
 bool public c;
@@ -46,7 +46,7 @@ uint256 public b;
 ```
 It would only occupy costs 2 slots.
 In this contract, there are only 2 parameters in storage
-```ts
+``` ts
 bool public locked;
 bytes32 private password;
 ```
