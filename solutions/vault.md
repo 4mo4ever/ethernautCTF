@@ -26,7 +26,12 @@ contract Vault {
 * Unlock the vault
 ---
 ## ***Thought Process***
-The `unlock` function is the only way to change the `locked` parameter's status. However, to set `locked = false`, we need to retrieve the private `password` parameter. In fact, there are still ways to get the amount of the parameter with the `private` keyword. Before discussing this, it is important to understand how storage works in Ethereum. Storage on Ethereum consists of 2^256 slots, and each slots is 32 bytes in size. Data is stored sequentially in these slots, in order of declaration. To optimize the storge, adjacent parameters can share the same slot if they do not exclusively occupy a slot exclusively. For example, if we have three data parameters `a`, `b`, `c`, declared as follows:
+The `unlock` function is the only way to change the `locked` parameter's status. However, to set `locked = false`, we need to retrieve the private `password` parameter. In fact, there are still ways to get the amount of the parameter with the `private` keyword. 
+
+Before discussing this, it is important to understand how storage works in Ethereum. 
+Storage on Ethereum consists of 2^256 slots, and each slots is 32 bytes in size. Data is stored sequentially in these slots, in order of declaration. 
+
+To optimize the storge, adjacent parameters can share the same slot if they do not exclusively occupy a slot exclusively. For example, if we have three data parameters `a`, `b`, `c`, declared as follows:
 ``` ts
 // slot 0
 bool public a;
