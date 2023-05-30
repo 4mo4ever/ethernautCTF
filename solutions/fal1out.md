@@ -1,6 +1,6 @@
 # **Level 2 -- Fal1out**
 ## **Contract to hack**
-``` ts
+``` solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 

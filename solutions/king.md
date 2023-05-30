@@ -1,6 +1,6 @@
 # **Level 9 -- King**
 ## **Contract to hack**
-``` ts
+``` solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -41,7 +41,7 @@ Nonetheless, if someone sends an ETH amount surpassing ours, they will take away
 
 ---
 ## ***Solution***
-``` ts
+``` solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 

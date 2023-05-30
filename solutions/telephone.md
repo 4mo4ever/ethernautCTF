@@ -1,6 +1,6 @@
 # **Level 4 -- Telephone**
 ## **Contract to hack**
-``` ts
+``` solidity
 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
@@ -31,7 +31,7 @@ This is a very easy challenge.
 ---
 ## ***Solution***
 Create a contract to call `changeOwner()`
-``` ts
+``` solidity
 pragma solidity ^0.8.0;
 interface ITelephone {
     function changeOwner(address _owner) external;

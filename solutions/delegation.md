@@ -1,6 +1,6 @@
 # **Level 6 -- Delegation**
 ## **Contract to hack**
-``` ts
+``` solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 

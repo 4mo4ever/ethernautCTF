@@ -1,6 +1,6 @@
 # **Level 10 -- Re-entrancy**
 ## **Contract to hack**
-``` ts
+``` solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 
@@ -40,7 +40,7 @@ contract Reentrance {
 Use re-entrancy attck
 ---
 ## ***Solution***
-``` ts
+``` solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 

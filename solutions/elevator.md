@@ -1,6 +1,6 @@
 # **Level 11 -- Elevator**
 ## **Contract to hack**
-``` ts
+``` solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -36,7 +36,7 @@ As a result, in our `Building` contract, we should make the return value changed
 
 ---
 ## ***Solution***
-``` ts
+``` solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 

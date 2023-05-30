@@ -1,6 +1,6 @@
 # **Level 7 -- Force**
 ## **Contract to hack**
-``` ts
+``` solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -27,7 +27,7 @@ Nevertheless, there is a special way to send ETH to any contract which is called
 
 ---
 ## ***Solution***
-``` ts
+``` solidity
 pragma solidity ^0.8.0;
 
 contract ForceAttack {

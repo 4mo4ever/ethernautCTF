@@ -1,6 +1,6 @@
 # **Level 1 -- Fallback**
 ## **Contract to hack**
-``` ts
+``` solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -69,7 +69,7 @@ However according to ``` constructor() ``` the owner has 1000 eth. If we use thi
 
 ---
 * ```receive() ```
-``` js
+``` solidity
 receive() external payable {
     require(msg.value > 0 && contributions[msg.sender] > 0);
     owner = msg.sender;

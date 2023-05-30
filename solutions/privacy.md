@@ -1,6 +1,6 @@
 # **Level 12 -- Privacy**
 ## **Contract to hack**
-``` ts
+``` solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -41,7 +41,7 @@ contract Privacy {
 The knowledge point is the same as the one in Level 8.
 Due to the type of the parameter `ID` is `int256`, it needs to occupy a separate slot. Therefore `locked` occupy a separete slot either. Then `flattening`, `denomination`, `awkwardness` can share the same slot, because every slot has 64 bytes / 256 bits, and 8 + 8 + 16 < 256.
 Besides, the fixed-length array of bytes32, each bytes32 occupy 1 whole slot.
-``` ts
+``` solidity
 bool public locked = true;              // slot 0
 uint256 public ID = block.timestamp;    // slot 1
 uint8 private flattening = 10;          // slot 2
