@@ -1,6 +1,6 @@
 # **Level 16 -- Preservation**
 ## **Contract to hack**
-``` ts
+``` solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -49,7 +49,7 @@ contract LibraryContract {
 ## ***Thought Process***
 首先观察`preservation`合约,其中的数据存储结构总共占用了4个slot
 ``` solidity
-    address public timeZone1Library;  // slot 0
+    address public timeZone1Library;    // slot 0
     address public timeZone2Library;    // slot 1
     address public owner;               // slot 2
     uint storedTime;                    // slot 3
@@ -66,7 +66,7 @@ contract LibraryContract {
 ---
 ## ***Solution***
 1.写一个恶意合约 然后部署
-``` ts
+``` solidity
 contract Preservation {
 
   // public library contracts
