@@ -38,7 +38,8 @@ contract ForceAttack {
     receive() payable{}
 
     function destroy(address to) external payable{
-        selfdestroy(to);
+        selfdestruct(payable(to));
+
     }
 
 }
