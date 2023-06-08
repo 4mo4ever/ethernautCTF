@@ -46,9 +46,9 @@ Nonetheless, if someone sends an ETH amount surpassing ours, they will take away
 pragma solidity ^0.8.0;
 
 contract KingHacker {
-    function kingship(address payable _to) public payable {
-        (bool sent, ) = _to.call.value(msg.value)("");
-        require(sent, "Failed");
+    function kingship(address payable to) public payable {
+        (bool success, ) = address(to).call{value: msg.value}("");
+        require(success, "error");
     }
 }
 ```
